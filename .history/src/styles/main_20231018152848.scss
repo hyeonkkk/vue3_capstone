@@ -1,0 +1,33 @@
+/* ==== Layout ==== */
+#app {
+    @include body(font-sm);
+    overflow: hidden;
+    height: 100vh;
+    line-height: normal;
+    background-color: $blue-gray-80;
+    color: $white-100;
+    font-weight: 400;
+    font-size: 14px;
+  
+    .frameworkWrap {
+      @apply flex flex-col h-screen;
+  
+      /* ==== Header ==== */
+      .header {
+        @apply flex justify-between items-center;
+        min-height: 60px;
+        min-width: 600px;
+        padding-left: 10px;
+        background-color: $blue-gray-80;
+        color: $white-100;
+        letter-spacing: normal;
+        border-bottom: 1px solid;
+        border-color: $gray-50;
+        font-size: 20px;
+  
+        div {
+          text-align: center;
+        }
+      }
+    }
+}

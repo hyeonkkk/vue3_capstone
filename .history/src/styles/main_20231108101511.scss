@@ -1,0 +1,51 @@
+/* ==== Layout ==== */
+#app {
+    overflow: hidden;
+    height: 100vh;
+    line-height: normal;
+    // background-color: $blue-gray-80;
+    // color: $white-100;
+    font-weight: 400;
+    font-size: 14px;
+  
+    .frameworkWrap {
+      @apply flex flex-col h-screen;
+
+      .contentWrap {
+        display: flex;
+        height: inherit;
+      }
+  
+      /* ==== Header ==== */
+      .header {
+        height: 55px;
+        background-color: #121212;
+        .forDoctor-head {
+          @apply flex items-center;
+          
+          height: inherit;
+    
+          span {
+            font-size: large;
+          }
+          img {
+            height: 55px;
+          }
+        }
+        .menu {
+          width : 30px;
+        }
+      
+      }
+
+      /*--- Sidebar ----*/
+      .sidebar {
+        height: inherit;
+
+
+        .el-menu {
+          border-right: 0;
+        }
+      }
+    }
+}
